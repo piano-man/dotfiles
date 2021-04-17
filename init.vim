@@ -5,6 +5,12 @@ set noswapfile
 set smartindent
 set scrolloff=8
 set smartindent
+" Mouse scroll in all modes + Cursor moves with scroll wheel
+set mouse=a
+map <ScrollWheelDown> j
+map <ScrollWheelUp> k
+
+" Display open file name with tmux
 autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
 autocmd VimLeave * call system("tmux rename-window bash")
 autocmd BufEnter * let &titlestring = ' ' . expand("%:t")                                                                 
