@@ -5,10 +5,12 @@ set noswapfile
 set smartindent
 set scrolloff=8
 set smartindent
+set nohlsearch
 " Mouse scroll in all modes + Cursor moves with scroll wheel
 set mouse=a
 map <ScrollWheelDown> j
 map <ScrollWheelUp> k
+
 
 " Display open file name with tmux
 autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
@@ -53,6 +55,8 @@ nnoremap <leader>fw <cmd>lua require('telescope.builtin').live_grep()<cr>
 nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
+ "Reload vim config
+nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
 
 inoremap jk <ESC>
 nmap <C-n> :NERDTreeFind<CR>
