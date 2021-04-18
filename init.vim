@@ -1,4 +1,4 @@
-set statusline+=%F
+set statusline=%F
 set number
 set nobackup
 set noswapfile
