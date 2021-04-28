@@ -21,3 +21,12 @@
     1) :CocInstall coc-clangd
     2) :CocCommand clangd.install<br /> 
   Alternately, you can add the language server details in the coc-settings.json file and ensure that clangd is installed on your system.
+
+
+## tmux-config
+
+# Enable copy paste
+1. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+2. ~/.tmux/plugins/tpm/bin/install_plugins
+3. tmux source ~/.tmux.conf <br />
+[Reference link](https://www.seanh.cc/2020/12/27/copy-and-paste-in-tmux/#:~:text=tmux's%20copy%20mode,-tmux%20has%20a&text=In%20tmux%20Ctrl%20%2B%20b%20%5B%20enters,scrolls%20up%20by%20one%20page.)
