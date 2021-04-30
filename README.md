@@ -1,6 +1,7 @@
 ## nvim-config
 
 # Setup steps:<br />
+(For installation on MacOS, refer to https://github.com/neovim/neovim/wiki/Installing-Neovim)
 1. curl -o /usr/local/bin/nvim -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 2. chmod u+x /usr/local/bin/nvim
 4. mkdir ~/.config/nvim
