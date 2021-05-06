@@ -7,6 +7,7 @@ set scrolloff=8
 set smartindent
 set nohlsearch
 set clipboard=unnamedplus
+set undofile
 " Mouse scroll in all modes + Cursor moves with scroll wheel
 set mouse=a
 map <ScrollWheelDown> j
