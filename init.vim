@@ -95,6 +95,12 @@ nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
 nnoremap <leader>q :copen<cr>
 
 inoremap jk <ESC>
+inoremap kj <ESC>
+
+" copy paste mappings 
+inoremap <C-r> <C-O><C-R>
+inoremap <C-u> <C-O>u
+
 vmap <S-c> <plug>NERDCommenterToggle
 nmap <S-c> <plug>NERDCommenterToggle
 nnoremap <C-n> :NERDTreeToggle<CR>
