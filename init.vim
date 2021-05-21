@@ -1,6 +1,5 @@
 set statusline=%F
 set number
-set relativenumber
 set nobackup
 set noswapfile
 set smartindent
@@ -148,6 +147,20 @@ set smarttab
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
+
+" Toggle mouse mode
+function! ToggleMouse()
+    " check if mouse is enabled
+    if &mouse == 'a'
+        " disable mouse
+        set mouse=
+    else
+        " enable mouse everywhere
+        set mouse=a
+    endif
+endfunc
+
+nnoremap <leader>m <cmd>:call ToggleMouse()<cr>
 
 colorscheme gruvbox
 
