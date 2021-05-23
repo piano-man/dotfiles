@@ -1,6 +1,16 @@
-## nvim-config
+# fish-config
 
-# Setup steps:<br />
+## Setup steps:<br />
+1. [Install fish](https://fishshell.com/)
+3. [Install omf](https://github.com/oh-my-fish/oh-my-fish)
+4. omf install bobthefish
+5. [Install fzf](https://github.com/junegunn/fzf)
+7. omf install fzf
+
+
+# nvim-config
+
+## Setup steps:<br />
 (For installation on MacOS, refer to https://github.com/neovim/neovim/wiki/Installing-Neovim)
 1. curl -o /usr/local/bin/nvim -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
 2. chmod u+x /usr/local/bin/nvim
@@ -13,7 +23,7 @@
 
 
 
-# Language support:
+## Language support:
 1. Golang:<br />
   a. Run 'GO111MODULE=on go get golang.org/x/tools/gopls@latest' <br />
   NOTE: coc-settings.json already contains the language server details
@@ -21,12 +31,13 @@
   a. Open nvim and execute: <br/>
     1) :CocInstall coc-clangd
     2) :CocCommand clangd.install<br /> 
-  Alternately, you can add the language server details in the coc-settings.json file and ensure that clangd is installed on your system.
+    Alternately, you can add the language server details in the coc-settings.json file and ensure that clangd is installed on your system.<br />
+3. [Cscope Support](https://github.com/mfulz/cscope.nvim) : Use only if coc-clangd does not work
 
 
-## tmux-config
+# tmux-config
 
-# Enable copy paste
+## Enable copy paste
 1. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 2. ~/.tmux/plugins/tpm/bin/install_plugins
 3. tmux source ~/.tmux.conf <br />
