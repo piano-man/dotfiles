@@ -190,8 +190,8 @@ function! OpenTree()
 endfunction
 
 "" Highlight currently open buffer in NERDTree
-autocmd VimEnter * call OpenTree()
-autocmd BufEnter * call SyncTree()
+"autocmd VimEnter * call OpenTree()
+"autocmd BufEnter * call SyncTree()
 
 
 " coc config
