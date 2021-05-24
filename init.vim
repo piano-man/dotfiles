@@ -90,7 +90,7 @@ nnoremap <leader>fw :lua require('telescope.builtin').grep_string({ search = vim
 nnoremap <leader>fr :lua require('telescope.builtin').grep_string { search = vim.fn.expand("<cword>") }<CR>
 
 "Reload vim config
-nnoremap <leader>r :source ~/.config/nvim/init.vim<cr>
+nnoremap <silent><leader>r :source ~/.config/nvim/init.vim<cr>
 
 " Open quic fix list
 nnoremap <leader>q :copen<cr>
@@ -104,7 +104,7 @@ inoremap <C-u> <C-O>u
 
 vmap <S-c> <plug>NERDCommenterToggle
 nmap <S-c> <plug>NERDCommenterToggle
-nnoremap <C-n> :NERDTreeToggle \| wincmd p<CR>
+nnoremap <silent><C-n> :NERDTreeToggle \| wincmd p<CR>
 nnoremap <C-s> <cmd>:call SyncTree()<cr>
 
 " open NERDTree automatically
