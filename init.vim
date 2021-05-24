@@ -105,6 +105,7 @@ inoremap <C-u> <C-O>u
 vmap <S-c> <plug>NERDCommenterToggle
 nmap <S-c> <plug>NERDCommenterToggle
 nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-s> <cmd>:call SyncTree()<cr>
 
 " open NERDTree automatically
 "autocmd StdinReadPre * let s:std_in=1
