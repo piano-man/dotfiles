@@ -104,7 +104,7 @@ inoremap <C-u> <C-O>u
 
 vmap <S-c> <plug>NERDCommenterToggle
 nmap <S-c> <plug>NERDCommenterToggle
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle \| wincmd p<CR>
 nnoremap <C-s> <cmd>:call SyncTree()<cr>
 
 " open NERDTree automatically
