@@ -34,6 +34,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Telescope requirements
 Plug 'nvim-lua/popup.nvim'
@@ -78,6 +79,16 @@ require('telescope').setup{
     }
 }
 require('telescope').load_extension('fzy_native')
+EOF
+
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"c","go"}, -- one of "all", "maintained" (parsers with maintainers), or a list of languages
+  ignore_install = { "javascript" }, -- List of parsers to ignore installing
+  highlight = {
+    enable = true,              -- false will disable the whole extension
+  },
+}
 EOF
 
 " Telescope remaps
