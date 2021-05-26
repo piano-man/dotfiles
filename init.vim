@@ -19,7 +19,6 @@ map <ScrollWheelUp> k
 autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
 autocmd VimLeave * call system("tmux rename-window bash")
 autocmd BufEnter * let &titlestring = ' ' . expand("%:t")                                                                 
-autocmd InsertLeave * :w!
 set title
 
 " Specify a directory for plugins
@@ -103,6 +102,9 @@ nnoremap <leader>fr :lua require('telescope.builtin').grep_string { search = vim
 
 "Reload vim config
 nnoremap <silent><leader>r :source ~/.config/nvim/init.vim<cr>
+
+"Save vim file
+nnoremap <leader>s :w!<cr>
 
 " Open quic fix list
 nnoremap <leader>q :copen<cr>
@@ -329,7 +331,7 @@ nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document
 nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols
-nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
+"nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
 nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
