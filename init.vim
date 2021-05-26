@@ -19,6 +19,7 @@ map <ScrollWheelUp> k
 autocmd BufEnter * call system("tmux rename-window " . expand("%:t"))
 autocmd VimLeave * call system("tmux rename-window bash")
 autocmd BufEnter * let &titlestring = ' ' . expand("%:t")                                                                 
+autocmd InsertLeave * :w!
 set title
 
 " Specify a directory for plugins
