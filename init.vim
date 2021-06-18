@@ -111,6 +111,7 @@ nnoremap <leader>q :copen<cr>
 
 inoremap jk <ESC>
 inoremap kj <ESC>
+tnoremap jk <C-\><C-n>
 
 " copy paste mappings 
 inoremap <C-r> <C-O><C-R>
