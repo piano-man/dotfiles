@@ -17,7 +17,7 @@
 4. mkdir ~/.config/nvim
 5. Place the init.vim and coc-settings.json files in ~/.config/nvim
 6. Create ~/.tmux.conf and copy contents of tmux.conf to it.
-7. Run 'tmux source ~/.tmux.conf'
+7. Install PlugIn manager from https://github.com/junegunn/vim-plug
 8. Open nvim and run :PlugInstall
 9. To setup live_grep with telescope, ensure you have 'rg' installed from https://github.com/BurntSushi/ripgrep
 
