@@ -17,9 +17,11 @@
 4. mkdir ~/.config/nvim
 5. Place the init.vim and coc-settings.json files in ~/.config/nvim
 6. Create ~/.tmux.conf and copy contents of tmux.conf to it.
-7. Run 'tmux source ~/.tmux.conf'
-8. Open nvim and run :PlugInstall
-9. To setup live_grep with telescope, ensure you have 'rg' installed from https://github.com/BurntSushi/ripgrep
+7. Install PlugIn manager from https://github.com/junegunn/vim-plug
+7. Install lua from https://www.tecmint.com/install-lua-in-centos-ubuntu-linux/
+8. Install nodejs (https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/)
+9. Open nvim and run :PlugInstall
+10. To setup live_grep with telescope, ensure you have 'rg' installed from https://github.com/BurntSushi/ripgrep
 
 
 
@@ -27,6 +29,8 @@
 1. Golang:<br />
   a. Run 'GO111MODULE=on go get golang.org/x/tools/gopls@latest' <br />
   NOTE: coc-settings.json already contains the language server details
+1. RUST:<br />
+  a. https://github.com/neoclide/coc-rls <br />
 2. C/C++:<br />
   a. Open nvim and execute: <br/>
     1) :CocInstall coc-clangd
