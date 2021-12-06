@@ -12,7 +12,7 @@
 
 ## Setup steps:<br />
 (For installation on MacOS, refer to https://github.com/neovim/neovim/wiki/Installing-Neovim)
-1. curl -o /usr/local/bin/nvim -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+1. curl -o /usr/local/bin/nvim -LO https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage(or https://github.com/neovim/neovim/releases/latest/download/nvim.appimage)
 2. chmod u+x /usr/local/bin/nvim
 4. mkdir ~/.config/nvim
 5. Place the init.vim and coc-settings.json files in ~/.config/nvim
@@ -22,6 +22,10 @@
 8. Install nodejs (https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/)
 9. Open nvim and run :PlugInstall
 10. To setup live_grep with telescope, ensure you have 'rg' installed from https://github.com/BurntSushi/ripgrep
+
+To resolve some telescope and popup issues, reclone the telescope.nvim and popup.nvim plugin repositories as such:
+1. cd ~/.vim/plugged
+2. Simple delete and reclone telescope.nvim(https://github.com/nvim-telescope/telescope.nvim), popup.nvim(https://github.com/nvim-lua/popup.nvim), and plenary.nvim(https://github.com/nvim-lua/plenary.nvim) 
 
 
 
