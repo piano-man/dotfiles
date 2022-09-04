@@ -19,7 +19,7 @@
 6. Create ~/.tmux.conf and copy contents of tmux.conf to it.
 7. Install PlugIn manager from https://github.com/junegunn/vim-plug
 7. Install lua from https://www.tecmint.com/install-lua-in-centos-ubuntu-linux/
-8. Install nodejs (https://computingforgeeks.com/how-to-install-nodejs-on-ubuntu-debian-linux-mint/)
+8. Install nodejs (https://computingforgeeks.com/install-node-js-14-on-ubuntu-debian-linux/)
 9. Open nvim and run :PlugInstall
 10. To setup live_grep with telescope, ensure you have 'rg' installed from https://github.com/BurntSushi/ripgrep
 
