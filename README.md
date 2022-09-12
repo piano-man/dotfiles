@@ -20,6 +20,7 @@
 7. Install PlugIn manager from https://github.com/junegunn/vim-plug
 7. Install lua from https://www.tecmint.com/install-lua-in-centos-ubuntu-linux/
 8. Install nodejs (https://computingforgeeks.com/install-node-js-14-on-ubuntu-debian-linux/)
+8. pip install pynvim
 9. Open nvim and run :PlugInstall
 10. To setup live_grep with telescope, ensure you have 'rg' installed from https://github.com/BurntSushi/ripgrep
 
