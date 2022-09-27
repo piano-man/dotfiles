@@ -50,4 +50,5 @@ To resolve some telescope and popup issues, reclone the telescope.nvim and popup
 1. git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 2. ~/.tmux/plugins/tpm/bin/install_plugins
 3. tmux source ~/.tmux.conf <br />
+4. Install xclip so that copy paste works across vim sessions in different tmux tabs
 [Reference link](https://www.seanh.cc/2020/12/27/copy-and-paste-in-tmux/#:~:text=tmux's%20copy%20mode,-tmux%20has%20a&text=In%20tmux%20Ctrl%20%2B%20b%20%5B%20enters,scrolls%20up%20by%20one%20page.)
